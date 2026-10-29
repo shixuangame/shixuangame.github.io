@@ -73,6 +73,28 @@ a:hover { text-decoration: underline; }
 
 .nav-toggle { display: none; }
 
+/* 语言切换 */
+.nav a.lang {
+  border: 1px solid var(--line);
+  margin-left: 6px;
+  font-size: 13.5px;
+  letter-spacing: .4px;
+  font-weight: 600;
+  padding: 6px 12px;
+  color: var(--ink-2);
+}
+.nav a.lang:hover { background: var(--brand-soft); border-color: #c9d6f5; color: var(--brand-dark); }
+
+/* 跳转链接：默认隐藏，聚焦时出现 */
+.skip {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--brand); color: #fff; padding: 10px 16px;
+  border-radius: 0 0 8px 0; z-index: 100; font-size: 14px;
+}
+.skip:focus { left: 0; }
+
+.footer-right { text-align: right; }
+
 /* ---------- 按钮 ---------- */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
